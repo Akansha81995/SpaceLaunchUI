@@ -196,7 +196,7 @@ export default class SpaceFilters extends React.Component {
                                                 </div>
                                                 <div className="image-details">
                                                     <div className="image-text">Successful <br /> Landing</div>
-                                                    <span>{obj.launch_landing === true ? 'true' : 'false'}</span>
+                                                    <span>{obj.rocket.first_stage.cores[0].land_success === true ? 'true' : 'false'}</span>
                                                 </div>
                                                 <br />
                                             </div>
