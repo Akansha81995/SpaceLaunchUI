@@ -83,7 +83,7 @@ export default class SpaceFilters extends React.Component {
                                         <div className="filter-button">
                                             <div className="radioPad">
                                                 <label
-                                                tabIndex="0"
+                                                    tabIndex="0"
                                                     className={
                                                         this.state.launch_year === launch_year ?
                                                             'radioPad__wrapper radioPad__wrapper--selected' :
@@ -141,7 +141,7 @@ export default class SpaceFilters extends React.Component {
                                         <div className="filter-button">
                                             <div className="radio-filter">
                                                 <label
-                                                tabIndex="0"
+                                                    tabIndex="0"
                                                     className={
                                                         this.state.land_success === land_success ?
                                                             'radioPad__wrapper radioPad__wrapper--selected' :
@@ -172,7 +172,7 @@ export default class SpaceFilters extends React.Component {
                             <div className="gallery-grid">{this.state.LaunchData.length > 0 ?
                                 this.state.LaunchData.map((obj, i) => {
                                     return (
-                                        <div className="space-details"  tabIndex="0" key={i}>
+                                        <div className="space-details" tabIndex="0" key={i}>
                                             <img src={obj.links.mission_patch_small} alt={obj.mission_name}></img>
                                             <div className="product-bottom">
                                                 <div className="image-details">
