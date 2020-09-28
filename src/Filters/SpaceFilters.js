@@ -33,7 +33,7 @@ export default class SpaceFilters extends React.Component {
     }
 
     /* Get data on selecting filter */
-    getFilteredData() {
+    getFilteredData = () => {
         this.setState({ loading: true })
         const { launch_success, launch_year, land_success } = this.state;
         let url;
