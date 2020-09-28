@@ -1,6 +1,6 @@
 
 Made the UI responsive.
-Implemented ACcessibility and eslint.
+Implemented Accessibility and eslint.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
