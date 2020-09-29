@@ -53,14 +53,18 @@ export default class SpaceFilters extends React.Component {
                                 (launch_success === '' || launch_success === undefined) ?
                                     globalVariable.baseURL + '&land_success=' + land_success + '&launch_year=' + launch_year :
                                     globalVariable.baseURL + '&launch_success=' + launch_success + '&land_success=' + land_success + '&launch_year=' + launch_year;
-        fetch(url, { method: 'GET' }).then((response) => {
+        return fetch(url, { method: 'GET' })
+        .then((response) => {
             return response.json();
-        }).then((data) => {
+        })
+        .then((data) => {
             this.setState({
                 LaunchData: data,
                 loading: false
             })
-        }).catch((error) => {
+            return data;
+        })
+        .catch((error) => {
             this.setState({ loading: false })
         });
     }
